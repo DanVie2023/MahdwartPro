@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout
+<FrameLayout
 
     xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
@@ -8,35 +8,12 @@
     android:layout_height="match_parent"
     android:orientation="vertical">
 
-    <com.google.android.material.floatingactionbutton.FloatingActionButton
-        android:id="@+id/floatingActionButton4"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:clickable="true"
-        android:src="@android:drawable/ic_input_add"
-        android:contentDescription="Enter How Much Cookies You Want"
-        app:backgroundTint="@color/yellow_e3light" />
-
-    <LinearLayout
+    <com.google.android.gms.maps.MapView
+        android:id="@+id/mapView"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:orientation="vertical">
+        android:contentDescription="Enter How Much Cookies You Want" />
 
-        <com.google.android.material.appbar.MaterialToolbar
-            android:id="@+id/materialToolbar3"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:background="@color/yellow_e3"
-            android:minHeight="?attr/actionBarSize"
-            android:theme="?attr/actionBarTheme" />
-
-        <ListView
-            android:id="@+id/ivTodoList"
-            android:layout_width="match_parent"
-            android:layout_height="match_parent" />
-
-    </LinearLayout>
-
-</LinearLayout>
+</FrameLayout>
 
 
