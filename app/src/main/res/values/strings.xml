@@ -1,3 +1,17 @@
 <resources>
     <string name="app_name">MahdwartPro</string>
+    <string name="button_preview_message">Nachrichtenvorschau</string>
+    <string name="button_settings">Einstellungen</string>
+    <string name="button_settings_email">E-Mail-Einstellungen</string>
+    <string name="button_settings_add_email">E-Mailadresse hinzufügen</string>
+    <string name="button_settings_remove_email">E-Mail entfernen</string>
+    <string name="button_settings_edit_email">E-Mail bearbeiten</string>
+    <string name="button_settings_file">Datei-Einstellungen</string>
+    <string name="text_view_settings_email">E-Mail Kontakte</string>
+    <string name="text_view_settings_version">Version 1.0.0</string>
+    <string name="text_view_preview_SendToTitle">Senden an:</string>
+    <string name="text_view_preview_SendToTest">Daniel.Vieler@web.de, d.vieler@e3-gmbh.de</string>
+    <string name="text_view_preview_MessageTitle">Nachricht:</string>
+    <string name="text_view_preview_Message">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est L</string>
+    <string name="button_preview_send">Senden</string>
 </resources>
