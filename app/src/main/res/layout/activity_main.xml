@@ -6,28 +6,35 @@
     android:layout_height="match_parent"
     tools:context=".MainActivity">
 
+    <ImageView
+        android:id="@+id/image_view_test_image"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scaleType="centerCrop"
+        android:src="@drawable/kartenansicht_testbild" />
+
     <com.google.android.material.button.MaterialButton
         android:id="@+id/button_settings"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_margin="48dp"
-        app:iconSize="48dp"
-        app:iconPadding="0dp"
         android:contentDescription="@string/button_settings"
-        app:iconGravity="textStart"
         app:icon="@drawable/baseline_settings_24"
+        app:iconGravity="textStart"
+        app:iconPadding="0dp"
+        app:iconSize="48dp"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
     <com.google.android.material.button.MaterialButton
         android:id="@+id/button_message_preview"
         android:layout_width="wrap_content"
-        android:layout_margin="48dp"
-        app:icon="@drawable/baseline_email_24"
         android:layout_height="wrap_content"
+        android:layout_margin="48dp"
+        android:text="@string/button_preview_message"
+        app:icon="@drawable/baseline_email_24"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        android:text="@string/button_preview_message" />
+        app:layout_constraintEnd_toEndOf="parent" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>

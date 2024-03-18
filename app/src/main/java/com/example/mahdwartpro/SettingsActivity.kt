@@ -27,9 +27,10 @@ class SettingsActivity : AppCompatActivity() {
         val adapter = ArrayAdapter(this, R.layout.simple_list_item_1, listItems)
         binding.listViewEmailContacts.adapter = adapter
 
-        binding.listViewEmailContacts.setOnItemClickListener { _, _, position, _ ->
+        binding.listViewEmailContacts.setOnItemLongClickListener { _, _, position, _ ->
             listItems.removeAt(position)
             adapter.notifyDataSetChanged()
+            return@setOnItemLongClickListener true
         }
 
         binding.buttonSettingsAddEmail.setOnClickListener {
@@ -47,7 +48,18 @@ class SettingsActivity : AppCompatActivity() {
     }
 
     private fun setListItems() {
-        listItems = arrayListOf("d.vieler@e3-gmbh.de", "daniel.vieler@web.de")
+        listItems = arrayListOf(
+            "d.vieler@e3-gmbh.de",
+            "daniel.vieler@web.de",
+            "d.vieler@e3-gmbh.de",
+            "daniel.vieler@web.de",
+            "d.vieler@e3-gmbh.de",
+            "daniel.vieler@web.de",
+            "d.vieler@e3-gmbh.de",
+            "daniel.vieler@web.de",
+            "d.vieler@e3-gmbh.de",
+            "daniel.vieler@web.de"
+        )
     }
 
     private fun String.isValidEmail() =
